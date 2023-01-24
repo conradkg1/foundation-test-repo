@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
     <title>html-sandbox</title>
+    <style>
+        .spacer{height:25px}
+    </style>
 </head>
 <header class="lead, text-center"><strong>foundation document test</strong></header>
 <body>
@@ -19,22 +22,34 @@
         <ol>
             <li>Item Three</li>
         </ol>
+        <div class="spacer"></div>
+        <!-- BUTTONS, COLORS, SIZES -->
         <button class="alert button tiny">button</button>
         <button class="warning button small">button</button>
         <button class="success button">button</button>
         <button class="button large">button</button>
         <button class="secondary button">button</button>
+        <!-- BUTTONS, COLORS, SIZES -->
     </div>
+    <div class="spacer"></div>
     <div class="row">
+        <!-- FORMS -->
         <form>
+            <!-- FORM TEXT BOX -->
             <div>
                 <label>Form Entry Label</label> 
                 <input type="text" placeholder="Your Text Here" >
             </div>
+            <!-- FORM TEXT BOX -->
+            <div class="spacer"></div>
+            <!-- FORM NUMBER BOX -->
             <div>
                 <label>Number Entry Box</label>
                 <input type="number"></input>
             </div>
+            <!-- FORM NUMBER BOX -->
+            <div class="spacer"></div>
+            <!-- FORM DROPDOWN MENU -->
             <div>
                 <label>Fruit Selection</label>
                 <select>
@@ -44,6 +59,9 @@
                     <option>Strawberries</option>
                 </select>
             </div>
+            <!-- FORM DROPDOWN MENU -->
+            <div class="spacer"></div>
+            <!-- FORM CHECKBOX MENU -->
             <fieldset class="fieldset">
                 <legend>Checkboxes</legend>
                 <input type="checkbox"><label>Apples</label></input>
@@ -51,16 +69,26 @@
                 <input type="checkbox"><label>Pineapples</label></input>
                 <input type="checkbox"><label>Strawberries</label></input>
             </fieldset>
+            <!-- FORM CHECKBOX MENU -->
+            <div class="spacer"></div>
+            <!-- FORM SEARCH BOX INLINE BUTTON -->
             <div class="input-group">
                 <input class="input-group-field"></input>
                 <div class="input-group-button"><input type="submit" class="button" value="Search"></input></div>
             </div>
+            <!-- FORM SEARCH BOX INLINE BUTTON -->
+            <div class="spacer"></div>
+            <!-- FORM SWITCH -->
             <div class="switch">
                 <input class="switch-input" id="mySwitch" type="checkbox"></input>
                 <label class="switch-paddle" for="mySwitch"><span class="show-for-sr"></span></label>
             </div>
+            <!-- FORM SWITCH -->
+            <!-- FORMS -->
         </form>
     </div>
+    <div class="spacer"></div>
+    <!-- TABLE -->
     <div>
         <table class="striped hover">
             <tr>
@@ -85,6 +113,103 @@
             </tr>
         </table>
     </div>
+    <!-- TABLE -->
+    <div class="spacer"></div>
+    
+    <div class="row">
+        <!-- LINK MENU -->
+        <ul class="menu">
+            <li class="menu-text">Link Menu</li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+        <!-- LINK MENU -->
+        <div class="spacer"></div>
+        <!-- LINK MENU VERTICAL -->
+        <ul class="menu vertical">
+            <li class="menu-text">Link Menu</li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+        <!-- LINK MENU VERTICAL -->
+    </div>
+    <div class="spacer"></div>
+    <!-- TOP BAR MENUS -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Site Title</li>
+                <li>
+                    <a href="#">One</a>
+                    <ul class="menu vertical">
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul>
+        </div>
+    </div>
+    <!-- TOP BAR MENUS-->
+    <div class="spacer"></div>
+    <!-- CALLOUTS -->
+    <div class="row">
+        <div class="callout">
+            <p>This is an example of a callout</p>
+        </div>
+        <div class="callout secondary">
+            <p>This is an example of a secondary callout</p>
+        </div>
+        <div class="callout success">
+            <p>This is an example of a success callout</p>
+        </div>
+        <div class="callout warning">
+            <p>This is an example of a warning callout</p>
+        </div>
+        <div class="callout alert">
+            <p>This is an example of a alert callout</p>
+        </div>
+    </div>
+    <!-- CALLOUTS -->
+    <div class="spacer"></div>
+    <!-- LABELS -->
+    <span class="label">Label</span>
+    <span class="secondary label">Secondary Label</span>
+    <span class="success label">Success Label</span>
+    <span class="warning label">Warning Label</span>
+    <span class="alert label">Alert Label</span>
+    <!-- LABELS -->
+    <div class="spacer"></div>
+    <!-- BADGES -->
+    <span class="badge">B1</span>
+    <span class="secondary badge">SB1</span>
+    <span class="success badge">SB2</span>
+    <span class="warning badge">WB</span>
+    <span class="alert badge">AB</span>
+    <!-- BADGES -->
+    <div class="spacer"></div>
+    <!-- BREADCRUMBS -->
+    <nav role="navigation">
+        <ul class="breadcrumbs">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">POSTS</a></li>
+            <li>MY POST</li>
+        </ul>
+    </nav>
+    <!-- BREADCRUMBS -->
+
 </body>
 
 </html>
